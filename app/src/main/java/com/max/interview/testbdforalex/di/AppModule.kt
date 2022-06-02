@@ -3,6 +3,7 @@ package com.max.interview.testbdforalex.di
 import android.content.Context
 import androidx.room.Room
 import com.max.interview.testbdforalex.data.cache.room.AppDatabase
+import com.max.interview.testbdforalex.data.cache.room.MIGRATION_1_2
 import com.max.interview.testbdforalex.data.cache.room.UserDao
 import dagger.Module
 import dagger.Provides
@@ -21,6 +22,7 @@ class AppModule {
         Room.databaseBuilder(context,
             AppDatabase::class.java,
             "app_database")
+            .addMigrations(MIGRATION_1_2)
             .build()
 
     @Provides

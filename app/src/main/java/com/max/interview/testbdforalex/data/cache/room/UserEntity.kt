@@ -10,5 +10,8 @@ data class UserEntity(
     @ColumnInfo(name = "id") val id : Int,
     @ColumnInfo(name = "first_name") val fName : String,
     @ColumnInfo(name = "list_name") val lName : String,
-    val age : Int
+    val age : Int,
+    val icon : Int?,
+    val money : Int,
+    val job : String?
 )

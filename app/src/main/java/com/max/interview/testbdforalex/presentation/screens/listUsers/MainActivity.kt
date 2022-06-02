@@ -21,37 +21,10 @@ class MainActivity : AppCompatActivity() {
         ActivityMainBinding.inflate(layoutInflater)
     }
 
-    @Inject
-    lateinit var userDao: UserDao
-
-    @Inject
-    lateinit var userStorage: UserStorage
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-        binding.btnSave.setOnClickListener {
-            lifecycleScope.launch {
 
-                userDao.insertUser(UserEntity(0,
-                    userStorage.getRandomFirstName(),
-                    userStorage.getRandomLastName(),
-                    userStorage.getRandomAge()))
-
-                val list = userDao.getUsers()
-
-                withContext(Dispatchers.Main) {
-
-                    val sb = StringBuilder()
-
-                    list.forEach {
-                        sb.append(it.toString()).append("\n")
-                    }
-
-                    binding.textView.text = sb.toString()
-                }
-            }
-        }
     }
 }
