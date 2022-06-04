@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Maksik/AndroidStudioProjects/TestbdforAlex/app/src/main/res/drawable/users_custom_holder.xml" value="0.2575" />
+        <entry key="..\:/Users/Maksik/AndroidStudioProjects/TestbdforAlex/app/src/main/res/drawable/users_holder.xml" value="0.2575" />
         <entry key="..\:/Users/Maksik/AndroidStudioProjects/TestbdforAlex/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Maksik/AndroidStudioProjects/TestbdforAlex/app/src/main/res/layout/users_holder.xml" value="0.5" />
       </map>
     </option>
   </component>

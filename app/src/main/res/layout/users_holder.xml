@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/user_holder_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@drawable/users_custom_holder"
+    android:elevation="8dp"
+    app:cardCornerRadius="10dp">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/img_user"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="8dp"
+            tools:src="@drawable/img1" />
+
+        <TextView
+            android:id="@+id/text_fio"
+            style="@style/Fio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_toEndOf="@+id/img_user"
+            tools:text="Petrov Ivan" />
+
+        <TextView
+            android:id="@+id/text_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Fio"
+            android:layout_marginEnd="5dp"
+            android:layout_toEndOf="@+id/text_fio"
+            tools:text = "Age: 25"/>
+
+        <TextView
+            android:id="@+id/text_job"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_below="@+id/text_fio"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@+id/img_user"
+            tools:text = "Job: Worker"/>
+
+        <TextView
+            android:id="@+id/text_zp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_below="@+id/text_job"
+            android:layout_toEndOf="@+id/img_user"
+            tools:text = "Money: 20000"/>
+
+        <ImageView
+            android:id="@+id/btn_delete_user"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_delete"
+            android:layout_alignParentEnd="true" />
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
